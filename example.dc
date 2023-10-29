@@ -26,7 +26,7 @@ ganz haupt()
         }
     }
 
-    tunchar('\n');
+    tunzeichen('\n');
 
     zurückgeben 0;
 }
