@@ -1,3 +1,5 @@
 DEUTSCHES C
 C, aber mit deutschen Schlüsselwörtern.
 
+Zurzeit funktioniert es nur mit GNU/Linux Betriebssystemen und Neovim.
+
