@@ -1,0 +1,33 @@
+#einschließen <stdbool.h>
+#einschließen <stdio.h>
+
+#beschreiben BIS 1000
+
+artbeschreibung mitvorzeichen lang lang ganz ll;
+
+ganz haupt()
+{
+    ll i, j;
+    statisch bool p[BIS + 1];
+
+    für(i = 2; i <= BIS; i++)
+    {
+        wenn(p[i])
+            fortsetzen;
+
+        druckenf("%lld ", i);
+
+        j = 2 * i;
+
+        solange(j <= BIS)
+        {
+            p[j] = wahr;
+            j += i;
+        }
+    }
+
+    tunchar('\n');
+
+    zurückgeben 0;
+}
+

@@ -8,6 +8,7 @@ all: dcc-preproc syntax.vim
 clean:
 	$(RM) dcc-preproc
 	$(RM) syntax.vim
+	$(RM) example
 
 install: dcc-preproc syntax.vim
 	$(MKDIR) ~/.local/bin
@@ -18,8 +19,8 @@ install: dcc-preproc syntax.vim
 	$(INSTALL) -m644 syntax.vim ~/.config/nvim/syntax/dc.vim
 	$(INSTALL) -m644 ftdetect.vim ~/.config/nvim/ftdetect/dc.vim
 
-dcc-preproc: main.c rules.h
-	$(CC) -o dcc-preproc main.c
+dcc-preproc: dcc-preproc.c rules.h
+	$(CC) -o dcc-preproc dcc-preproc.c
 
 syntax.vim: rules.h gen_syntax_file.py
 	python gen_syntax_file.py

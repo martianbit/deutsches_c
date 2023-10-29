@@ -3,3 +3,7 @@ C, aber mit deutschen Schlüsselwörtern.
 
 Zurzeit funktioniert es nur mit GNU/Linux Betriebssystemen und Neovim.
 
+Geben Sie die folgenden Befehle ein, um das Programm zu kompilieren und auszuführen:
+ - $ dcc example.dc -o example
+ - $ ./example
+
