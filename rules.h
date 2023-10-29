@@ -7,6 +7,7 @@ const char* const rules[][2] = {
     { "bool", "bool" },
     { "true", "wahr" },
     { "false", "falsch" },
+    { "main", "haupt" },
     { "printf", "druckenf" },
     { "putchar", "tunchar" },
     { "auto", "auto" },
